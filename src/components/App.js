@@ -26,17 +26,26 @@ class App extends Component {
       <div className="ui container" style={{ marginTop: "10px" }}>
         <div>
           {" "}
-          <h1
-            style={{
+          <h2
+          >
+            <p style={{
               textAlign: "center",
               marginTop: "30px",
+              marginBottom: "10px",
               color: "grey",
-              borderBottom: "1px solid black",
-            }}
-          >
-            Duy Hậu - Đẹp trai nhất vũ trụ
-          </h1>
+              lineHeight: '1px'
+            }}>DUY HẬU</p>
+            <br />
+             <p style={{
+              textAlign: "center",
+              color: "grey",
+              lineHeight: '1px',
+              marginBottom: "10px",
+
+            }}>Đẹp trai nhất vũ trụ</p> 
+          </h2>
         </div>
+        <br />
         <SearchBar onSubmit={this.onSearchSubmit} />
         <ImageList images={this.state.images} />
       </div>
